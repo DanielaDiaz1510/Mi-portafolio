@@ -12,11 +12,3 @@ document.querySelectorAll('.nav-links a').forEach(link => {
     navLinks.classList.remove('active');
   });
 });
-
-// Envío de formulario (simulado)
-const form = document.querySelector('.contact-form');
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
-  alert('¡Gracias por tu mensaje! Me pondré en contacto contigo pronto.');
-  form.reset();
-});

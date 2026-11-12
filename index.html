@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Carlos Méndez | Desarrollador Web</title>
+  <title>Daniela Díaz Falla | Desarrolladora de Software</title>
+  <meta name="description" content="Portafolio de Daniela Díaz Falla: desarrollo web, móvil y backend, y aseguramiento de la calidad (QA)." />
   <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,14 +14,15 @@
   <!-- Header / Navegación -->
   <header class="header">
     <nav class="navbar">
-      <div class="logo">CM</div>
+      <div class="logo">DD</div>
       <ul class="nav-links">
         <li><a href="#inicio">Inicio</a></li>
         <li><a href="#sobre-mi">Sobre mí</a></li>
         <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#experiencia">Experiencia</a></li>
         <li><a href="#contacto">Contacto</a></li>
       </ul>
-      <div class="hamburger" id="hamburger">
+      <div class="hamburger" id="hamburger" aria-label="Abrir menú">
         <span></span>
         <span></span>
         <span></span>
@@ -31,9 +33,9 @@
   <!-- Sección de Inicio -->
   <section id="inicio" class="hero">
     <div class="hero-content">
-      <h1>Hola, soy <span>Daniela Diaz</span></h1>
-      <h2>Desarrollador Web Full Stack</h2>
-      <p>Creo experiencias digitales rápidas, accesibles y visualmente atractivas.</p>
+      <h1>Hola, soy <span>Daniela Díaz Falla</span></h1>
+      <h2>Desarrolladora de Software · Web, Móvil y QA</h2>
+      <p>Estudiante de Tecnología en Desarrollo de Aplicaciones Web y Móviles, con más de 5 años de experiencia liderando proyectos y procesos de transformación digital.</p>
       <a href="#proyectos" class="btn">Ver mis proyectos</a>
     </div>
   </section>
@@ -44,17 +46,41 @@
     <div class="about-content">
       <div class="about-text">
         <p>
-          Soy un desarrollador web apasionado por construir aplicaciones modernas y funcionales.
-          Tengo experiencia en tecnologías como <strong>HTML, CSS, JavaScript, React, Node.js y bases de datos SQL/NoSQL</strong>.
-          Me encanta aprender nuevas tecnologías y resolver problemas complejos con soluciones simples.
+          Curso la <strong>Tecnología en Desarrollo de Aplicaciones Web y Móviles</strong> en la Fundación Universitaria Compensar,
+          con la <strong>Técnica Profesional en Programación de Aplicaciones de Software</strong> ya culminada.
         </p>
         <p>
-          Actualmente trabajo como desarrollador freelance y colaboro con startups y pequeñas empresas para llevar sus ideas al siguiente nivel.
+          He construido proyectos con <strong>Java, C# (ASP.NET Core), Kotlin, JavaScript, HTML y CSS</strong>, y bases de datos
+          <strong>MySQL y PostgreSQL</strong>. Me interesa especialmente el aseguramiento de la calidad: pruebas unitarias,
+          planes de prueba y cobertura de código.
+        </p>
+        <p>
+          Desde 2021 trabajo en Agroconsultorias, donde lidero proyectos regulados y dirigí la migración de información
+          histórica a plataformas digitales. Busco mi práctica empresarial en el área de TI.
         </p>
         <a href="#contacto" class="btn">Contáctame</a>
       </div>
       <div class="about-image">
-        <img src="https://via.placeholder.com/300x300?text=Foto+Perfil" alt="Carlos Méndez">
+        <div class="avatar" aria-hidden="true">DD</div>
+      </div>
+    </div>
+
+    <div class="skills">
+      <div class="skill-group">
+        <h3>Lenguajes</h3>
+        <ul class="tags"><li>Java</li><li>C#</li><li>Kotlin</li><li>JavaScript (ES6)</li><li>SQL</li></ul>
+      </div>
+      <div class="skill-group">
+        <h3>Web y móvil</h3>
+        <ul class="tags"><li>HTML5</li><li>CSS3</li><li>Flexbox y Grid</li><li>Bootstrap</li><li>Android</li><li>Retrofit</li></ul>
+      </div>
+      <div class="skill-group">
+        <h3>Backend y datos</h3>
+        <ul class="tags"><li>ASP.NET Core Web API</li><li>Entity Framework Core</li><li>MySQL</li><li>PostgreSQL</li><li>DBeaver</li></ul>
+      </div>
+      <div class="skill-group">
+        <h3>Calidad y herramientas</h3>
+        <ul class="tags"><li>JUnit 5</li><li>JaCoCo</li><li>Maven</li><li>Git y GitHub</li><li>Swagger</li></ul>
       </div>
     </div>
   </section>
@@ -63,23 +89,47 @@
   <section id="proyectos" class="projects">
     <h2>Mis Proyectos</h2>
     <div class="projects-grid">
-      <div class="project-card">
-        <img src="https://via.placeholder.com/400x250?text=E-commerce" alt="E-commerce">
-        <h3>Tienda Online</h3>
-        <p>Plataforma de comercio electrónico con React y Firebase.</p>
-        <a href="#" target="_blank" class="btn">Ver proyecto</a>
+      <article class="project-card">
+        <div class="project-banner banner-mobile">Kotlin · ASP.NET Core · MySQL</div>
+        <h3>App de Gestión de Usuarios</h3>
+        <p>App Android en Kotlin que consume una API REST en ASP.NET Core. Registro e inicio de sesión con contraseñas cifradas con BCrypt, arquitectura Controller → Service → Repository y persistencia en MySQL con Entity Framework Core.</p>
+        <a href="https://github.com/DanielaDiaz1510/APP_NATIVAS" target="_blank" rel="noopener" class="btn">Ver código</a>
+      </article>
+      <article class="project-card">
+        <div class="project-banner banner-qa">Java · JUnit 5 · JaCoCo</div>
+        <h3>Finanzas Console</h3>
+        <p>Sistema en Java por capas para registrar y analizar ingresos y egresos. Incluye plan de pruebas formal, pruebas unitarias con JUnit 5 y Maven, y 91% de cobertura de instrucciones medida con JaCoCo.</p>
+        <a href="https://github.com/DanielaDiaz1510/Pruebas_Software" target="_blank" rel="noopener" class="btn">Ver código</a>
+      </article>
+      <article class="project-card">
+        <div class="project-banner banner-web">JavaScript · HTML · CSS</div>
+        <h3>QuickShop</h3>
+        <p>Simulador de tienda online que consume la API de DummyJSON: carga dinámica de productos, inicio de sesión de prueba y carrito de compras persistente.</p>
+        <a href="https://danieladiaz1510.github.io/Lenguajes_De_Internet_2025/" target="_blank" rel="noopener" class="btn">Abrir demo</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- Sección Experiencia -->
+  <section id="experiencia" class="about">
+    <h2>Experiencia</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <h3>Líder de Proyectos y Transformación Digital</h3>
+        <p class="timeline-meta">Agroconsultorias · Marzo 2021 – Presente</p>
+        <ul>
+          <li>Coordinación de dos proyectos en campo bajo normativas de seguimiento de la ANLA y el ICA, con personal a cargo.</li>
+          <li>Dirección de la migración de información física e histórica a la plataforma SimplifICA, asegurando la integridad de los datos.</li>
+          <li>Soporte técnico interno y levantamiento de requerimientos para optimizar y automatizar procesos.</li>
+        </ul>
       </div>
-      <div class="project-card">
-        <img src="https://via.placeholder.com/400x250?text=Blog" alt="Blog">
-        <h3>Blog Personal</h3>
-        <p>Blog con sistema de comentarios y autenticación usando Node.js.</p>
-        <a href="#" target="_blank" class="btn">Ver proyecto</a>
-      </div>
-      <div class="project-card">
-        <img src="https://via.placeholder.com/400x250?text=App+Tareas" alt="App de tareas">
-        <h3>Task Manager</h3>
-        <p>Aplicación para gestionar tareas diarias con persistencia local.</p>
-        <a href="#" target="_blank" class="btn">Ver proyecto</a>
+      <div class="timeline-item">
+        <h3>Formación</h3>
+        <p class="timeline-meta">Fundación Universitaria Compensar</p>
+        <ul>
+          <li>Tecnología en Desarrollo de Aplicaciones Web y Móviles (en curso).</li>
+          <li>Técnica Profesional en Programación de Aplicaciones de Software (culminada).</li>
+        </ul>
       </div>
     </div>
   </section>
@@ -87,22 +137,17 @@
   <!-- Sección Contacto -->
   <section id="contacto" class="contact">
     <h2>Contáctame</h2>
-    <p>¿Tienes un proyecto en mente? ¡Escríbeme!</p>
-    <form class="contact-form">
-      <input type="text" placeholder="Tu nombre" required>
-      <input type="email" placeholder="Tu correo" required>
-      <textarea placeholder="Tu mensaje" rows="5" required></textarea>
-      <button type="submit" class="btn">Enviar</button>
-    </form>
+    <p>¿Tienes una vacante de práctica o un proyecto? Escríbeme.</p>
+    <a href="mailto:danieladiazfallah@gmail.com" class="btn">danieladiazfallah@gmail.com</a>
   </section>
 
   <!-- Footer -->
   <footer class="footer">
-    <p>&copy; 2025 Carlos Méndez. Todos los derechos reservados.</p>
+    <p>&copy; 2026 Daniela Díaz Falla</p>
     <div class="social-links">
-      <a href="#" target="_blank">GitHub</a>
-      <a href="#" target="_blank">LinkedIn</a>
-      <a href="#" target="_blank">Twitter</a>
+      <a href="https://github.com/DanielaDiaz1510" target="_blank" rel="noopener">GitHub</a>
+      <!-- CAMBIAR: reemplaza TU-USUARIO por tu usuario de LinkedIn -->
+      <a href="https://www.linkedin.com/in/TU-USUARIO" target="_blank" rel="noopener">LinkedIn</a>
     </div>
   </footer>
 

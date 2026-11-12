@@ -1,14 +1,20 @@
-# 💼 Mi Portafolio Web Profesional
+# 💼 Portafolio Web – Daniela Díaz Falla
 
-Este repositorio contiene el código fuente de mi **Portafolio Web Personal**, una interfaz moderna, limpia y totalmente adaptable diseñada para presentar mi perfil profesional, formación académica y proyectos al mercado laboral tecnológico.
+Sitio personal donde presento mi perfil, mis proyectos y mi experiencia.
 
-## 🚀 Características del Proyecto
+🔗 **Ver en línea:** https://danieladiaz1510.github.io/Ejemplo_Portafolio/
 
-*   **Diseño Responsivo (Adaptable):** Implementación de layouts flexibles usando propiedades avanzadas de CSS3 para garantizar que la interfaz se visualice correctamente en cualquier tamaño de pantalla (móviles, tablets y computadores).
-*   **Secciones Integradas:** Estructura modular que incluye un resumen profesional, stack de tecnologías dominadas, galería de proyectos destacados y canales oficiales de contacto directo.
-*   **Enfoque de Experiencia de Usuario (UX/UI):** Selección de paleta de colores corporativa y tipografías legibles orientadas a mantener una navegación fluida y profesional.
+## Contenido
 
-## 🛠️ Tecnologías Aplicadas
+- **Sobre mí:** formación en la Fundación Universitaria Compensar y stack técnico.
+- **Proyectos:** App de Gestión de Usuarios (Kotlin + ASP.NET Core + MySQL), Finanzas Console (Java + JUnit 5 + JaCoCo) y QuickShop (JavaScript + API DummyJSON).
+- **Experiencia:** liderazgo de proyectos y transformación digital en Agroconsultorias.
+- **Contacto:** correo, GitHub y LinkedIn.
 
-*   **Lenguajes:** HTML5, CSS3.
-*   **Metodología:** Diseño Adaptable (Responsive Web Design), Semántica Web Estricta.
+## Tecnologías
+
+- HTML5 semántico
+- CSS3 (Flexbox, Grid y media queries para diseño responsivo)
+- JavaScript (menú de navegación móvil)
+
+Publicado con GitHub Pages.

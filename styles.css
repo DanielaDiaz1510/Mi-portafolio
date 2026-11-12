@@ -266,6 +266,112 @@ ul {
   color: var(--white);
 }
 
+/* Avatar */
+.avatar {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary), #60a5fa);
+  color: var(--white);
+  font-size: 4.5rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  margin: 0 auto;
+}
+
+/* Habilidades */
+.skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.skill-group h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0.75rem;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tags li {
+  background: #dbeafe;
+  color: var(--primary-dark);
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+/* Tarjetas de proyecto */
+.project-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card .btn {
+  margin: auto 1.2rem 1.2rem;
+  align-self: flex-start;
+}
+
+.project-banner {
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.banner-mobile { background: linear-gradient(135deg, #1d4ed8, #7c3aed); }
+.banner-qa     { background: linear-gradient(135deg, #0f766e, #2563eb); }
+.banner-web    { background: linear-gradient(135deg, #2563eb, #0ea5e9); }
+
+/* Experiencia */
+.timeline {
+  max-width: 800px;
+  margin: 0 auto;
+  border-left: 3px solid var(--primary);
+  padding-left: 2rem;
+}
+
+.timeline-item {
+  margin-bottom: 2.5rem;
+}
+
+.timeline-item h3 {
+  font-size: 1.25rem;
+}
+
+.timeline-meta {
+  color: var(--gray);
+  margin-bottom: 0.75rem;
+}
+
+.timeline-item ul {
+  list-style: disc;
+  padding-left: 1.2rem;
+}
+
+.timeline-item li {
+  margin-bottom: 0.4rem;
+}
+
+.hero-content p {
+  max-width: 640px;
+  margin: 0 auto 1.5rem;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .nav-links {
